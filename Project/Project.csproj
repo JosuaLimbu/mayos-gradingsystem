@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C39895F-FA95-4C91-B741-1F53D5D53481}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserPage.Designer.cs">
+      <DependentUpon>AddUserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_lec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_lec.Designer.cs">
+      <DependentUpon>Admin_lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashboard.Designer.cs">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_kls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_kls.Designer.cs">
+      <DependentUpon>Admin_kls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_member.Designer.cs">
+      <DependentUpon>Admin_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailGradePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailGradePage.Designer.cs">
+      <DependentUpon>DetailGradePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dosen_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dosen_dashboard.Designer.cs">
+      <DependentUpon>Dosen_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get_username.cs" />
+    <Compile Include="GradePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradePage.Designer.cs">
+      <DependentUpon>GradePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JadwalPage.Designer.cs">
+      <DependentUpon>JadwalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lectures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lectures.Designer.cs">
+      <DependentUpon>Lectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMahasiswa.Designer.cs">
+      <DependentUpon>MenuMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_grade.Designer.cs">
+      <DependentUpon>report_grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rerpot_Grade.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rerpot_Grade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SD_grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SD_grade.Designer.cs">
+      <DependentUpon>SD_grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SD_grBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SD_grBook.Designer.cs">
+      <DependentUpon>SD_grBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SD_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SD_home.Designer.cs">
+      <DependentUpon>SD_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_dashboard.Designer.cs">
+      <DependentUpon>Student_dashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUserPage.resx">
+      <DependentUpon>AddUserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_lec.resx">
+      <DependentUpon>Admin_lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashboard.resx">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_kls.resx">
+      <DependentUpon>Admin_kls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_member.resx">
+      <DependentUpon>Admin_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailGradePage.resx">
+      <DependentUpon>DetailGradePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosen_dashboard.resx">
+      <DependentUpon>Dosen_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradePage.resx">
+      <DependentUpon>GradePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JadwalPage.resx">
+      <DependentUpon>JadwalPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lectures.resx">
+      <DependentUpon>Lectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMahasiswa.resx">
+      <DependentUpon>MenuMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="report_grade.resx">
+      <DependentUpon>report_grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rerpot_Grade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rerpot_Grade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SD_grade.resx">
+      <DependentUpon>SD_grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SD_grBook.resx">
+      <DependentUpon>SD_grBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SD_home.resx">
+      <DependentUpon>SD_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_dashboard.resx">
+      <DependentUpon>Student_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lec2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lec_ctrl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
